@@ -1,0 +1,27 @@
+p {
+  color: red;
+}
+
+.I-will{
+  color: blue;	
+  list-style-type: "\1F44D";
+  font-size: 150%;
+} 
+
+.circle{
+  color: green;
+  list-style-type: circle;
+}
+
+body{
+  background-color: rebeccapurple;
+}
+a{
+  color:black;
+  font-weight: bold;
+}
+@media (min-width: 30em) {
+  body {
+    background-color: blue;
+  }
+}
