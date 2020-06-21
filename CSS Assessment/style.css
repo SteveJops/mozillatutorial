@@ -1,0 +1,247 @@
+
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+
+
+/* All fonts are taken from https://www.fontsquirrel.com/tools/webfont-generator, https://www.cssfontstack.com/, https://fonts.google.com/ */
+
+@font-face { 
+    font-family: "Acme-Regular.ttf"; 
+    src: url(Acme-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;	
+}
+
+@font-face {
+    font-family: "AlfaSlabOne-Regular.ttf"; 
+    src: url(AlfaSlabOne-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;		
+}
+
+@font-face {
+    font-family: "Oswald-VariableFont_wght.ttf"; 
+    src: url(Oswald-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;		
+}
+
+
+html {
+  font-family: "Oswald-VariableFont_wght.ttf";
+  font-size: 10px;
+}
+
+
+h1 {
+  font-family: "AlfaSlabOne-Regular.ttf";
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+h2 {
+  font-family: "Acme-Regular.ttf";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+
+section h2 + p {
+   text-indent: 20px;
+}
+
+p, li {
+  font-size: 2rem;
+  line-height: 2;
+  letter-spacing: 0.25px;
+  word-spacing: 2px;
+}
+
+/* Links */
+
+a:link, a:visited, a:focus {
+   color: #a66;
+   outline: none;
+}
+
+a:hover{ 
+  background: #CDFEAA;
+  color: green;
+  text-decoration: none;
+}
+
+a:active{
+  background: #DC143C;
+  color: black;
+  text-decoration: none;
+}
+
+a[href*="https"], [href*="#"]{
+  background: url('external-link-52.png') no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
+  
+
+/* lists*/
+
+ul, ol {
+   margin: 1.2rem 0;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+ol {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+}
+
+/* nav elements*/
+/* list design obtained from site html5book.ru */
+.border {
+   list-style: none;
+   padding-left: 0;
+   margin-top: 0.5rem;
+}
+.border li {
+   font-family: "Trebuchet MS", "Lucida Sans";
+   padding: 7px 20px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   border-left: 10px solid #f05d22; 
+   box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+     -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
+   font-size: 20px;
+   letter-spacing: 2px;
+   transition: 0.3s all linear;
+}
+.border li:nth-child(2){border-color: #8bc63e;}
+.border li:nth-child(3){border-color: #fcba30;}
+.border li:nth-child(4){border-color: #1ccfc9;}
+.border li:nth-child(5){border-color: #493224;}
+.border li:nth-child(6){border-color: #DAA520;}
+.border li:hover {border-left: 10px solid transparent;}
+.border li:nth-child(1):hover {border-right: 10px solid #f05d22;}
+.border li:nth-child(2):hover {border-right: 10px solid #8bc63e;}
+.border li:nth-child(3):hover {border-right: 10px solid #fcba30;}
+.border li:nth-child(4):hover {border-right: 10px solid #1ccfc9;}
+.border li:nth-child(5):hover {border-right: 10px solid #493224;}
+.border li:nth-child(6):hover {border-right: 10px solid #DAA520;}
+
+nav li a:link, nav li a:visited, nav li a:focus {
+   color: black;
+   outline: none;
+}
+
+.ahome a:hover{ 
+  color: #f05d22;
+  text-decoration: none;
+}
+
+.ahome a:active{
+  color: rebeccapurple;
+  text-decoration: none;
+}
+
+.afind a:hover{ 
+  color: #8bc63e;
+  text-decoration: none;
+}
+
+.afind a:active{
+  color: rebeccapurple;
+  text-decoration: none;
+}
+
+.acourses a:hover{ 
+  color: #fcba30;
+  text-decoration: none;
+}
+
+.acourses a:active{
+  color: rebeccapurple;
+  text-decoration: none;
+}
+
+.astaff a:hover{ 
+  color: #1ccfc9;
+  text-decoration: none;
+}
+
+.astaff a:active{
+  color: rebeccapurple;
+  text-decoration: none;
+}
+
+.amedia a:hover{ 
+  color: #493224;
+  text-decoration: none;
+}
+
+.amedia a:active{
+  color: rebeccapurple;
+  text-decoration: none;
+}
+
+.aprospectus a:hover{ 
+  color: #DAA520;
+  text-decoration: none;
+}
+
+.aprospectus a:active{
+  color: rebeccapurple;
+  text-decoration: none;
+}
+
+nav li a[href*="#"]{
+  background: none;
+}
